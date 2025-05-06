@@ -1,0 +1,146 @@
+/* 登入、註冊、忘記密碼、忘記帳號、重寄驗證信、寄送成功，共用css */
+
+/* Form Input 中間間隔 */
+.form-group {
+    margin-bottom: 3.8%;
+}
+
+/* 登入 index.blade */
+#loginBtn {
+    width: 100%;
+    margin-top: 3.8%;
+}
+#fbLoginBtn {
+    width: 100%;
+}
+/* 重寄驗證信 & 忘記帳號文字區塊 */
+.text-right {
+    float:right;
+}
+/* 註冊 register/create.blade & social/create.blade */
+#registerBtn {
+    width: 100%;
+}
+#fbRegisterBtn {
+    width: 100%;
+}
+/* 重設密碼 reset.blade */
+#passwordResetBtn {
+    width: 100%;
+}
+/* 我已經仔細閱讀...checkbox */
+#agreeCheckbox {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/* 忘記密碼 email.blade */
+#resetBtn {
+    width: 100%;
+    margin-top: 3.8%;
+}
+/* 忘記帳號 account.blade*/
+#submitBtn {
+    width: 100%;
+    margin-top: 3.8%;
+}
+/* 返回登入頁 show.blade & success.blade */
+#returnLoginBtn {
+    width: 100%;
+}
+/* form 間距 show.blade & success.blade */
+#register_success {
+    padding: 5%;
+    border-radius: 50%;
+}
+#register_success div{
+    margin-left:5%;
+}
+/* loading img & 文字提示 */
+#loading {
+    text-align: center;
+}
+/* 與FB帳號關聯 social/edit.blade */
+#fbBtn {
+    width: 100%;
+}
+/* 訊息灰色框  active/success.blade & register/show.blade */
+#shadowBackground {
+    background-color: #F5F1EB;
+}
+
+/***********
+   提示訊息
+************/
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code {
+    border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.bs-callout-default {
+    border-left-color: #777;
+}
+
+.bs-callout-default h4 {
+    color: #777;
+}
+
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+    color: #5bc0de;
+}

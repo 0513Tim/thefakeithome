@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333333;
+    font-family: 'Roboto', 'Noto Sans TC', Arial, '微軟正黑體', '新細明體', Helvetica, sans-serif;
+}
+
+.sec-form {
+    position: relative;
+    padding: 4rem 1rem;
+    color: #212121;
+}
+
+.btn-margin {
+    margin-top: 8px;
+}
+
+/*====================================
+# side
+==================================== */
+
+.side {
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 6rem 6rem 0;
+    background-color: #4D95E1;
+    top: 0;
+    left: 0;
+    width: calc(calc(100% / 3) - 40px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.side-logo {
+    width: 200px;
+}
+
+.side-list li {
+    margin-top: 3rem;
+}
+
+.side-list a:hover img {
+    transition: 0.2s ease-in-out;
+    transform: translateY(-3px);
+    filter: drop-shadow(0px 5px 3px #265CC4);
+}
+
+@media (max-width:992px) {
+    .sec-form {
+        padding: 0 0 2rem 0;
+    }
+
+    .side {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    .bg-blue {
+        background-color: #4D95E1;
+    }
+
+    .side-list {
+        display: inline-flex;
+    }
+
+    .side-list li {
+        margin: 2em 20px;
+    }
+
+    .side-logo {
+        width: 150px;
+    }
+
+    .side h5 {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:576px) {
+    .side-logo {
+        width: 100px;
+    }
+
+    .side-list p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+
+/*====================================
+# 註冊頁
+==================================== */
+
+.form-base {
+    padding: 3rem 2rem;
+}
+
+.form-base h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #46A1E9;
+    margin-bottom: 15px;
+}
+
+.form-base .sub-title {
+    margin-bottom: 30px;
+}
+
+
+.form-base .form-control {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333333;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+}
+
+.form-base input::placeholder {
+    color: #9CAEBC;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.has-feedback-left {
+    position: relative;
+}
+
+.has-feedback-left input.form-control {
+    padding-left: 34px;
+    padding-right: 12px;
+}
+
+.has-feedback-left .form-control-feedback {
+    position: absolute;
+    line-height: 45px;
+    z-index: 2;
+    left: 12px;
+    top: 0;
+    color: #9CAEBC;
+}
+
+.form-base .btn {
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.btn-facebook {
+    background-color: #3578e5;
+}
+
+.btn-facebook:hover {
+    background-color: #265CC4;
+}
+
+.btn-agree {
+    background-color: #27A9E6;
+}
+
+.btn-agree:hover,
+.btn-agree:focus {
+    background-color: #0075AE;
+}
+
+.logform .agree {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.auth-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1px;
+    margin: 18px 0;
+    padding: 0;
+    background: #e5e5e5;
+}
+
+.auth-title {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: #777;
+    font-weight: 500;
+    min-width: 156px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 13px;
+}
+
+.agree-txt {
+    margin: 15px 0;
+}
+
+.agree-txt a {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+    text-decoration: none;
+}
+
+.agree-txt a:hover {
+    color: #0075AE;
+    border-color: #0075AE;
+}
+
+/*====================================
+# 登入頁
+==================================== */
+
+.password-function {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-function {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.password-function .forget a,
+.account-function a {
+    color: #333333;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.password-function .forget a:hover,
+.account-function a:hover {
+    color: #9CAEBC;
+}
+
+.account-function a:last-child {
+    padding-left: 15px;
+}
+
+.password-state {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    line-height: 45px;
+    color: #9CAEBC;
+    cursor: pointer;
+}
